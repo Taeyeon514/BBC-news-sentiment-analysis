@@ -1,10 +1,17 @@
-# BBC-news-sentiment-analysis
+# 🗞️뉴스?! 애매하긴 해~
+### BBC뉴스 기반 감정분석 (긍정, 부정, 중립)
 
-### 데이터 출처 및 사용 모델
+### 🔎데이터 출처 및 사용 모델
 - 데이터 출처: https://www.kaggle.com/code/gpreda/bbc-news-rss-feeds?select=bbc_news.csv(BBC 뉴스 데이터)
 - 사용 모델: https://huggingface.co/datasets/SetFit/bbc-news
 
-### 진행과정
+### 🖼️주제 선정 배경
+디지털 환경에서 뉴스가 여론·소비·투자에 미치는 영향이 커졌지만, 사람이 모든 기사를 읽고 톤을 파악하긴 어렵습니다.
+본 프로젝트는 BBC 뉴스 헤드라인/요약을 대상으로 감성(부정·중립·긍정) 분류를 수행해 시기·주제별 분위기 변화를 정량화하려고 합니다.
+카테고리 구성이 명확하고 품질이 안정적인 BBC 데이터를 사용했으며, 사전학습 언어모델(Hugging Face) 로 빠르게 베이스라인을 구축했습니다.
+또한, 헤드라인만으로 해당 뉴스의 분위기 파악을 하긴 어렵기 때문에 요약을 함께 보고 판단할 수 있게 했습니다. 
+
+### ⚙️진행과정
 <img width="1517" height="655" alt="image" src="https://github.com/user-attachments/assets/b89cb1b2-e554-424b-95c8-06723d4347f3" />
 <img width="526" height="212" alt="image" src="https://github.com/user-attachments/assets/d1663156-413e-4374-987c-102cbc9faa87" /><br>
 => 모델을 정한 후 성능을 테스트하기 위한 문장을 간략하게 입력해보았습니다. <br>
